@@ -116,7 +116,6 @@ public class Calculadora extends javax.swing.JFrame {
     }
     //CALCULAR FATORIAL DO NÚMERO SELECIONADO
     private void fatBttnActionPerformed(){
-        fat = true;
         sub = false;
         soma = false;
         vezes = false;
