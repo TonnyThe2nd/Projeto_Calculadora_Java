@@ -33,12 +33,9 @@ public class Calculadora extends javax.swing.JFrame {
     boolean sub = false;
     boolean vezes = false;
     boolean div = false;
-    boolean fat = false;
-    boolean elevar = false;
     boolean virgula = false;
     String primeiroValor;
     String segundoValor;
-    boolean segundoValorctr;
     int contador=0;
 
     //CALCULAR FATORIAL
@@ -86,9 +83,6 @@ public class Calculadora extends javax.swing.JFrame {
         sub = false;
         vezes = false;
         div = false;
-        fat = false;
-        elevar = false;
-        segundoValorctr = true;
         primeiroValor = contaField.getText();
         contaField.setText("");
     }
@@ -98,8 +92,6 @@ public class Calculadora extends javax.swing.JFrame {
         soma = false;
         vezes = false;
         div = false;
-        fat = false;
-        elevar = false;
         primeiroValor = contaField.getText();
         contaField.setText("");
     }
@@ -109,8 +101,6 @@ public class Calculadora extends javax.swing.JFrame {
         sub = false;
         soma = false;
         div = false;
-        fat = false;
-        elevar = false;
         primeiroValor = contaField.getText();
         contaField.setText("");
     }
@@ -120,8 +110,6 @@ public class Calculadora extends javax.swing.JFrame {
         sub = false;
         soma = false;
         vezes = false;
-        fat = false;
-        elevar = false;
         primeiroValor = contaField.getText();
         contaField.setText("");
     }
@@ -132,7 +120,6 @@ public class Calculadora extends javax.swing.JFrame {
         soma = false;
         vezes = false;
         div = false;
-        elevar = false;
         primeiroValor = contaField.getText();
         int resultado = fat(Integer.valueOf(primeiroValor));
         contaField.setText("" + resultado );
@@ -143,8 +130,6 @@ public class Calculadora extends javax.swing.JFrame {
         soma = false;
         vezes = false;
         div = false;
-        fat = false;
-        elevar = true;
         primeiroValor = contaField.getText();
         contaField.setText("" + Math.pow(Integer.valueOf(primeiroValor),2));
     }
@@ -154,8 +139,6 @@ public class Calculadora extends javax.swing.JFrame {
         soma = false;
         vezes = false;
         div = false;
-        fat = false;
-        elevar = false;
         primeiroValor = contaField.getText();
         if(virgula == true){
             contaField.setText(""+Math.sqrt(Integer.valueOf(primeiroValor)));
@@ -215,8 +198,6 @@ public class Calculadora extends javax.swing.JFrame {
         sub = false;
         vezes = false;
         div = false;
-        fat = false;
-        elevar = false;
         
     }
     //CONFIGURAÇÕES DO FRAME
