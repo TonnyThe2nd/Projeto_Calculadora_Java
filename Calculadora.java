@@ -5,6 +5,7 @@ public class Calculadora extends javax.swing.JFrame {
         initComponents();
     }
 
+    //COMPONENTES PARA O FRAME
     private javax.swing.JButton cincoBttn;
     private javax.swing.JTextField contaField;
     private javax.swing.JButton dividirBttn;
@@ -29,6 +30,7 @@ public class Calculadora extends javax.swing.JFrame {
     private javax.swing.JButton reiniciarBttn;
     private java.awt.Font fonte;
 
+    //VARIAVEIS DE CONTROLE
     boolean soma = false;
     boolean sub = false;
     boolean vezes = false;
@@ -36,7 +38,6 @@ public class Calculadora extends javax.swing.JFrame {
     boolean virgula = false;
     String primeiroValor;
     String segundoValor;
-    int contador=0;
 
     //CALCULAR FATORIAL
     private int fat(int val){
