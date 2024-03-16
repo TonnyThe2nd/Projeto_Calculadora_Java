@@ -1,5 +1,3 @@
-import java.util.EventListener;
-
 public class Calculadora extends javax.swing.JFrame {
     public Calculadora() {
         initComponents();
@@ -131,7 +129,15 @@ public class Calculadora extends javax.swing.JFrame {
         vezes = false;
         div = false;
         primeiroValor = contaField.getText();
-        contaField.setText("" + Math.pow(Integer.valueOf(primeiroValor),2));
+        try {
+            contaField.setText("" + Math.pow(Integer.valueOf(primeiroValor), 2));
+        } catch (NumberFormatException e) {
+            try {
+                contaField.setText("" + Math.pow(Double.valueOf(primeiroValor), 2));
+            } catch (NumberFormatException e2) {
+                System.out.println("Valor inválido. Certifique-se de inserir um número válido.");
+            }
+        }
     }
     //CALCULAR A RAIZ DO NÚMERO SELECIONADO
     private void raizBttnActionPerformed(){
